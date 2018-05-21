@@ -114,6 +114,11 @@ public class TccInitServiceImpl implements TccInitService {
             SpringBeanUtils.getInstance().registerBean(CoordinatorRepository.class.getName(), repository);
         });
 
+//        repositoryOptional.ifPresent(repository -> {
+//            serializer.ifPresent(
+//                    objectSerializer -> repository.setSerializer(objectSerializer));
+//            SpringBeanUtils.getInstance().registerBean(CoordinatorRepository.class.getName(), repository);
+//        });
 
     }
 }
